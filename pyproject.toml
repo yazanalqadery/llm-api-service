@@ -1,0 +1,22 @@
+[project]
+name = "shipping-ai-to-production"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Yazan Alqadery", email = "yazanalqadery@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.162.0",
+    "pydantic>=2.14.3",
+    "pydantic-settings>=2.16.2",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+shipping-ai-to-production = "shipping_ai_to_production:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
